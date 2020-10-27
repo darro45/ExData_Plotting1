@@ -1,3 +1,6 @@
+# Download the data available in the README and save it in your working directory
+
+
 Sys.setlocale(category = "LC_ALL", locale = "english")
 master <- as.character(unzip("exdata_data_household_power_consumption.zip",list = TRUE)$Name) #Get the dataset's file names
 ori_data  <- read.csv(unz("exdata_data_household_power_consumption.zip", master),nrows = 2075259 , sep = ";",header=TRUE) #Read dataset
